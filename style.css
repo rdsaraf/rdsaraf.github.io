@@ -1,0 +1,226 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	font-weight: normal;
+}
+.background
+{
+	width: 100%;
+	height: 100%;
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url(bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow-y: auto;
+}
+.nav{
+	width: 350px;
+	height: auto;
+	position: absolute;
+	top: 20%;
+	left: 0%;
+}
+.nav a{
+	text-decoration: none;
+	font-size: 28px;
+	font-family: algerian;
+	font-weight: bold;
+	height: 90px;
+	margin: 5px 0;
+	float: left;
+	display: inline-block;
+	background-color: black;
+	border-radius: 50px;
+	color: white;
+	line-height: 90px;
+	text-align: center;
+	transition: 300ms;
+}
+a.active, .nav a:hover{
+	background-color: white;
+	color: black;
+	width: 100%;
+}
+.nav i{
+	margin-right: 20px;
+}
+.a{
+	width: 130%;
+}
+.b{
+	width: 120%;
+}
+.c{
+	width: 100%;
+}
+.d{
+	width: 120%;
+}
+.e{
+	width: 130%;
+}
+.content{
+	position: absolute;
+	width: 1000px;
+	min-height: 700px;
+	height: auto;
+	/*background-color: red;*/
+	right: 0;
+	top: 10%;
+}
+.home{
+	position: absolute;
+	right: 10px;
+	bottom: 50px;
+	color: white;
+	font-family: Broadway;
+}
+.home p{
+	font-size: 30px;
+	line-height: 40px;
+	margin-bottom: 20px;
+	font-family: algerian;
+}
+.home h1{
+	color: red;
+	font-size: 95px;
+	padding-right: 90px;
+	border-bottom: 3px solid white;
+
+}
+.home h3{
+	color: white;
+	font-size: 28px;
+	padding: 5px 0;
+	opacity: 0.6;
+}
+.aboutme{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	color: white;
+	font-family: Castellar;
+	padding: 0 60px;
+	display: none;
+}
+.aboutme p{
+	font-size: 24px;
+	line-height: 40px;
+	margin-bottom: 20px;
+
+}
+.aboutme b{
+	color: black;
+	font-weight: bold;
+	font-family: BatmanForeverAlternate;
+}
+.gallery{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	color: white;
+	padding: 0 60px;
+	display: none;
+}
+.gallery .image{
+	width: 26%;
+	margin: 2%;
+	float: left;
+}
+.image img{
+	width: 100%;
+	transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+.image img:hover{
+	transform: scale(1.2);
+	-webkit-transform:scale(1.2);
+
+}
+.contactme{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	color: white;
+	padding: 0 60px;
+	display: none;
+}
+.inputtext{
+	width: 55%;
+	height: 65px;
+	border:3px solid black;
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 25px;
+	padding: 0 10px;
+	float: left;
+	margin-bottom: 15px;
+}
+.inputmessage{
+	width: 55%;
+	height: 135px;
+	border:3px solid black;
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 25px;
+	padding: 0 10px;
+	float: left;
+}
+.submitbutton{
+	width: 200px;
+	height: 65px;
+	font-family: arial;
+	background-color: white;
+	color: black;
+	font-size: 20px;
+	border:none;
+	font-weight: bold;
+	float: left;
+	clear: both;
+	margin-top: 25px;
+
+}
+.contactmode{
+	font-weight: bold;
+	font-size: 20px;
+	color: #8E2323;
+	float: left;
+	width: 30%;
+	height: 30%;
+	margin-right: 100px;
+	
+	
+}
+
+.skillsandintrest{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	color: white;
+	font-family: Castellar;
+	padding: 0 60px;
+	display: none;
+}
+.skillsandintrest b{
+	font-size: 35px;
+	line-height: 40px;
+	margin-bottom: 20px;
+	color: black;
+	font-family: BatmanForeverAlternate;
+}
+.skillsandintrest ol{
+	font-size: 24px;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+.skillsandintrest ol li b{
+	font-size: 24px;
+	color: #923bf4;
+}

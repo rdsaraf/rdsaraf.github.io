@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>RD web</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="background">
+		<div class="nav">
+			<a class="a active" href="#"><i class="fa fa-home" aria-hidden="true"></i>HOME</a>
+			<a class="b" href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>ABOUT ME</a>
+			<a class="c" href="#"><i class="fa fa-hand-o-right" aria-hidden="true"></i>SKILLS AND INTREST</a>
+			<a class="d" href="#"><i class="fa fa-commenting" aria-hidden="true"></i>CONTACT ME</a>
+			<a class="e" href="#"><i class="fa fa-camera" aria-hidden="true"></i>GALLERY</a>
+		</div>
+		
+	</div>
+	<div class="content">
+		<div class="home">
+			<p><b>WELCOME TO MY PORTFOLIO</b></p><br>
+			<h1>RD SARAF</h1>
+			<h3>Junior Web Developer</h3>
+		</div>
+		<div class="aboutme">
+			<p>HELLO FRIENDS,<br>
+			My name is <b>Rushikesh Dilip Saraf</b>.<br>
+			I am from <b>Jalgaon city</b> from Khandesh region.<br>
+			I passed my ssc with <b>98.40% </b>from R.R.Vidyalaya,Jalgaon.<br>
+			I passed my hsc with <b>82.62%</b> from Swami Vivekanand Junior College,Jalgaon.<br>
+			My cet percentile score is <b>96.99 </b>.
+			I am currently studying in Shri Guru Gobind Singhji Institute of Engineering and Technology,Vishnupuri,Nanded.<br>
+			I enrolled in this college for <b>first year Btech(Computer Science and Engineering)</b> course.<br>
+			My First Semester SGPA is <b>9.4</b></p>
+			
+		</div>
+		<div class="gallery">
+			<div class="image">
+				<img src="IMG2.JPG">
+			</div>
+			<div class="image">
+				<img src="IMG3.JPG">
+			</div>
+			<div class="image">
+				<img src="IMG5.JPG">
+			</div>
+			<div class="image">
+				<img src="IMG10.JPG">
+			</div>
+			<div class="image">
+				<img src="IMG6.JPG">
+			</div>
+			<div class="image">
+				<img src="IMG7.JPG">
+			</div>
+			<div class="image">
+				<img src="IMG8.JPG">
+			</div>
+			<div class="image">
+				<img src="IMG9.JPG">
+			</div>
+		</div>
+		<div class="contactme">
+			<MARQUEE><div class="contactmode">
+				<i class="fa fa-instagram" aria-hidden="true"></i><br>
+				@smartness_hacker
+			</div>
+			<div class="contactmode">
+				<i class="fa fa-facebook-official" aria-hidden="true"></i><br>
+				Rushikesh Saraf
+			</div></MARQUEE>
+			<div class="contactform">
+				<form action="index.html" method="post">
+
+					<input type="text" name="" class="inputtext" value="first name">
+					<input type="text" name="" class="inputtext" value="Last Name">
+					<input type="text" name="" class="inputtext" value="Your Email">
+					<textarea cols="4" rows="6" class="inputmessage">MESSAGE ME....</textarea>
+					<input type="button" name="" class="submitbutton" value="submit">
+				</form>
+			</div>
+
+		</div>
+		<div class="skillsandintrest">
+			<CENTER><b>SKILLS</b></CENTER>
+			<OL>
+				<LI>I KNOW BASICS OF<B> HTML, CSS </B> AND ALSO LITTLE BIT ABOUT <B>JAVA SCRIPT</B>.</LI>
+				
+				<LI>I KNOW <B>ADOBE PHOTOSHOP AND ADOBE PREMIERE PRO</B> FOR EDITING PURPOSE.</LI>
+				<LI>I AM BEGINNER IN <B>ADOBE ILLUSTRATOR</B>.</LI>
+				<LI>I CAN MANAGE EVENTS.</LI>
+				<LI>I KNOW BASICS OF <B>C LANGUAGE</B> ALSO.</LI>
+				<LI>APART FROM ACADEMICS I PLAY KABADDI.</LI>
+			</OL>
+			<CENTER><B>INTRESTS</B></CENTER>
+			<OL>
+				<LI>LEARNING PROGRAMMING LANGUAGES.</LI>
+				<LI>PHOTOSHOP AND VIDEO EDITING.</LI>
+				<LI>MAKING A WEBSITE</LI>
+				<LI>BEING UPDATED IN ALL TECHNOLOGIES.</LI>
+				<li>GAMING</li>
+			</OL>
+		</div>
+		
+	</div>
+
+
+	<script type="text/javascript" src="jquery-1.11.3.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('a').mouseover(function(){
+				//alert("are you sure?");
+				var selected = $(this);
+				$('a').removeClass('active');
+				$(selected).addClass('active');
+			});
+			var $a = $('.a'),
+			$b = $('.b'),
+			$c = $('.c'),
+			$d = $('.d'),
+			$e = $('.e'),
+			$home = $('.home'),
+			$aboutme = $('.aboutme'),
+			$skillsandintrest = $('.skillsandintrest'),
+			$contactme = $('.contactme'),
+			$gallery = $('.gallery');
+			$a.mouseover(function(){
+				$home.fadeIn();
+				$aboutme.fadeOut();
+				$skillsandintrest.fadeOut();
+				$gallery.fadeOut();
+				$contactme.fadeOut();
+			})
+			$b.mouseover(function(){
+				$aboutme.fadeIn();
+				$home.fadeOut();
+				$skillsandintrest.fadeOut();
+				$gallery.fadeOut();
+				$contactme.fadeOut();
+			})
+			$c.mouseover(function(){
+				$skillsandintrest.fadeIn();
+				$aboutme.fadeOut();
+				$contactme.fadeOut();
+				$gallery.fadeOut();
+				$home.fadeOut();
+			})
+			$d.mouseover(function(){
+				$contactme.fadeIn();
+				$gallery.fadeOut();
+				$skillsandintrest.fadeOut();
+				$home.fadeOut();
+				$aboutme.fadeOut();
+			})
+			$e.mouseover(function(){
+				$gallery.fadeIn();
+				$contactme.fadeOut();
+				$home.fadeOut();
+				$aboutme.fadeOut();
+				$skillsandintrest.fadeOut();
+			})
+		
+
+		});
+		
+	</script>	
+</body>
+</html>
